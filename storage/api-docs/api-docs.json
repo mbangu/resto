@@ -1,0 +1,549 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Restaurant API",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/articles": {
+            "post": {
+                "operationId": "47431d96c1f1e555a5f0ee975b2a2bb6",
+                "responses": {
+                    "201": {
+                        "description": "Display a listing of the resource."
+                    }
+                }
+            }
+        },
+        "/api/articles/create": {
+            "post": {
+                "operationId": "b159b7ea55bd1b585dbc398d4ddda941",
+                "responses": {
+                    "201": {
+                        "description": "Store a newly created resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/articles/show/{id}": {
+            "get": {
+                "operationId": "6a4710f6872f6ec20d1ca8fbd9215c9e",
+                "responses": {
+                    "200": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/articles/search/{name}": {
+            "get": {
+                "operationId": "d2e243cd5fbe44e4c0c5667146a9f830",
+                "responses": {
+                    "200": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/articles/update/{id}": {
+            "put": {
+                "operationId": "c639b8506d268f39efa107a16a1df0c0",
+                "responses": {
+                    "200": {
+                        "description": "Update the specified resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/articles/delete/{id}": {
+            "delete": {
+                "operationId": "8731d426bc54ace378f9fcd216e42021",
+                "responses": {
+                    "200": {
+                        "description": "Remove the specified resource from storage."
+                    }
+                }
+            }
+        },
+        "/api/login": {
+            "post": {
+                "operationId": "a3b306d14572d1f4bd6c064b3233e7b8",
+                "responses": {
+                    "201": {
+                        "description": "Logged in."
+                    }
+                }
+            }
+        },
+        "/api/logout": {
+            "post": {
+                "operationId": "fe8f3429cd6979b3b4517e186505f9f9",
+                "responses": {
+                    "201": {
+                        "description": "Logged out."
+                    }
+                }
+            }
+        },
+        "/api/categories_restaurants": {
+            "get": {
+                "operationId": "347fa00f7cd606cbc49f9359ee3baa4b",
+                "responses": {
+                    "200": {
+                        "description": "Display a listing of the resource."
+                    }
+                }
+            }
+        },
+        "/api/categories_restaurants/create": {
+            "post": {
+                "operationId": "988fc9de4bccfaef552a91a354c2e2c1",
+                "responses": {
+                    "201": {
+                        "description": "Store a newly created resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/categories_restaurants/show/{id}": {
+            "get": {
+                "operationId": "0c5845cae9d156b8cdeb8a36d11c357a",
+                "responses": {
+                    "201": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/categories_restaurants/update/{id}": {
+            "put": {
+                "operationId": "5483311cc732dd2378cee4de9ebf456f",
+                "responses": {
+                    "201": {
+                        "description": "Update the specified resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/categories_restaurants/delete/{id}": {
+            "delete": {
+                "operationId": "f5a2dde2248427724432606e6e04b465",
+                "responses": {
+                    "201": {
+                        "description": "Remove the specified resource from storage."
+                    }
+                }
+            }
+        },
+        "/api/categories_restaurants/search/{name}": {
+            "get": {
+                "operationId": "5dd224fd9f00b5434fc775d815c72bbf",
+                "responses": {
+                    "201": {
+                        "description": "Search the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/clients": {
+            "get": {
+                "operationId": "d00d20521584ab5da83e088abb7aded2",
+                "responses": {
+                    "200": {
+                        "description": "Display a listing of the resource."
+                    }
+                }
+            }
+        },
+        "/api/clients/show/{id}": {
+            "get": {
+                "operationId": "106aebb5b3ced243b4159a6a9f452651",
+                "responses": {
+                    "200": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/clients/update/{id}": {
+            "put": {
+                "operationId": "e8f38f4bc10b3828a2409411a2ecc72c",
+                "responses": {
+                    "200": {
+                        "description": "Update the specified resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/clients/delete/{id}": {
+            "delete": {
+                "operationId": "9ed3e78e472e58ada4a3a3da0664bd19",
+                "responses": {
+                    "200": {
+                        "description": "Remove the specified resource from storage."
+                    }
+                }
+            }
+        },
+        "/api/commandes": {
+            "get": {
+                "operationId": "6a11b062792d6b0aed3816592a638d6c",
+                "responses": {
+                    "200": {
+                        "description": "Display a listing of the resource."
+                    }
+                }
+            }
+        },
+        "/api/commandes/create": {
+            "post": {
+                "operationId": "f52979744ba9c913650deed2e679f1cd",
+                "responses": {
+                    "200": {
+                        "description": "Store a newly created resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/commandes/show/{id}": {
+            "get": {
+                "operationId": "f8d3f8ed7a7953c563e78ad3290ba367",
+                "responses": {
+                    "200": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/commandes/update/{id}": {
+            "put": {
+                "operationId": "74ae3d017600fa64d3c3b3acfc08a74d",
+                "responses": {
+                    "200": {
+                        "description": "Update the specified resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/commandes/delete/{id}": {
+            "delete": {
+                "operationId": "35e3badc86fb60482bc0c27d13d8a03f",
+                "responses": {
+                    "200": {
+                        "description": "Remove the specified resource from storage."
+                    }
+                }
+            }
+        },
+        "/api/commandes/searchByNumCmd/{num_cmd}": {
+            "get": {
+                "operationId": "214bf6b4312a4ea88bf46c88b5f98352",
+                "responses": {
+                    "200": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/commandes/searchByNomClient/{nom_client}": {
+            "get": {
+                "operationId": "f49c3cb26dfe4a769db5b0dad328de0b",
+                "responses": {
+                    "200": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/points_de_ventes": {
+            "get": {
+                "operationId": "a86400dd4f23e437579353979e750f5f",
+                "responses": {
+                    "200": {
+                        "description": "Display a listing of the resource."
+                    }
+                }
+            }
+        },
+        "/api/points_de_ventes/create": {
+            "post": {
+                "operationId": "cd66791098bd4a243f49e36e6b598d03",
+                "responses": {
+                    "201": {
+                        "description": "Store a newly created resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/points_de_ventes/show/{id}": {
+            "get": {
+                "operationId": "f6b36f3271b5d962bdc5e3a08065c542",
+                "responses": {
+                    "200": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/points_de_ventes/delete/{id}": {
+            "delete": {
+                "operationId": "af347193c871722393f5f18517b5ab28",
+                "responses": {
+                    "200": {
+                        "description": "Remove the specified resource from storage."
+                    }
+                }
+            }
+        },
+        "/api/points_de_ventes/search/{name}": {
+            "get": {
+                "operationId": "18caceedc009ca6d4d587238ac6e5d75",
+                "responses": {
+                    "200": {
+                        "description": "Search the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/restaurants": {
+            "get": {
+                "operationId": "0ef65917394f8eb77311d1d085ff31e4",
+                "responses": {
+                    "200": {
+                        "description": "Display a listing of the resource."
+                    }
+                }
+            }
+        },
+        "/api/restaurants/create": {
+            "post": {
+                "operationId": "f8df32d8151ab970ef84420ae9cf6464",
+                "responses": {
+                    "201": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/restaurants/show/{id}": {
+            "get": {
+                "operationId": "9c1f8a2e091fedf8b9dfa805da8520f9",
+                "responses": {
+                    "200": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/restaurants/update/{id}": {
+            "put": {
+                "operationId": "f5454aa882cf317f52bde0f774ada276",
+                "responses": {
+                    "200": {
+                        "description": "Update the specified resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/restaurants/delete/{id}": {
+            "delete": {
+                "operationId": "f6781cddca299991a0feb6d9cdca837d",
+                "responses": {
+                    "200": {
+                        "description": "Remove the specified resource from storage."
+                    }
+                }
+            }
+        },
+        "/api/restaurants/search/{name}": {
+            "get": {
+                "operationId": "c376919aa162991dcc3b0b6d5fd81a58",
+                "responses": {
+                    "200": {
+                        "description": "Search the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/serveurs": {
+            "get": {
+                "operationId": "4b8a019b29c6e32690992dbe62cc85ae",
+                "responses": {
+                    "201": {
+                        "description": "Display a listing of the resource."
+                    }
+                }
+            }
+        },
+        "/api/serveurs/create": {
+            "post": {
+                "operationId": "17de5478e534ba7fb0fa57e78f3df2c6",
+                "responses": {
+                    "201": {
+                        "description": "Store a newly created resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/serveurs/show/{id}": {
+            "get": {
+                "operationId": "b1e7db2f145d076a911c3534d089ed31",
+                "responses": {
+                    "200": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/serveurs/update/{id}": {
+            "delete": {
+                "operationId": "5e004886b64e0bce6154acee5427bb29",
+                "responses": {
+                    "200": {
+                        "description": "Update the specified resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/serveurs/delete/{id}": {
+            "delete": {
+                "operationId": "4156e9f8cdb96ad23cdf5af199bd3b73",
+                "responses": {
+                    "200": {
+                        "description": "Remove the specified resource from storage."
+                    }
+                }
+            }
+        },
+        "/api/serveurs/search/{name}": {
+            "get": {
+                "operationId": "42712b8f7c51d983dc4a003efe9dc2e6",
+                "responses": {
+                    "200": {
+                        "description": "Search the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/tables": {
+            "get": {
+                "operationId": "218d07c9683fe7c4b9ca0c7d171c6d44",
+                "responses": {
+                    "200": {
+                        "description": "Display a listing of the resource."
+                    }
+                }
+            }
+        },
+        "/api/tables/create": {
+            "post": {
+                "operationId": "2fb3c8ab6ec3c948a943e59cbdddcf3f",
+                "responses": {
+                    "201": {
+                        "description": "Store a newly created resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/tables/show/{id}": {
+            "get": {
+                "operationId": "4f46c5cd469dcc0cee2aa89e8eefa0fd",
+                "responses": {
+                    "200": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/tables/update/{id}": {
+            "put": {
+                "operationId": "c80669772be9429523c9511835d97b24",
+                "responses": {
+                    "200": {
+                        "description": "Update the specified resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/tables/delete/{id}": {
+            "delete": {
+                "operationId": "e2293a6dd9724bf7e278bf6a8113b291",
+                "responses": {
+                    "200": {
+                        "description": "Remove the specified resource from storage."
+                    }
+                }
+            }
+        },
+        "/api/users": {
+            "get": {
+                "operationId": "c457726701591d1183b53aa71fc13441",
+                "responses": {
+                    "200": {
+                        "description": "Display a listing of the resource."
+                    }
+                }
+            }
+        },
+        "/api/users/create": {
+            "post": {
+                "operationId": "d37ea9642c2cfbe867361ca7da44eec7",
+                "responses": {
+                    "201": {
+                        "description": "Store a newly created resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/users/show/{id}": {
+            "get": {
+                "operationId": "7441dc64a6717135ca7529e7ae4f747e",
+                "responses": {
+                    "200": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/users/search/{email}": {
+            "get": {
+                "operationId": "8caf593529a1a08e41210bd6d3fdcb4b",
+                "responses": {
+                    "200": {
+                        "description": "Display the specified resource."
+                    }
+                }
+            }
+        },
+        "/api/users/update/{id}": {
+            "put": {
+                "operationId": "97d6cee3e6d901306b2a691941b07ef0",
+                "responses": {
+                    "200": {
+                        "description": "Update the specified resource in storage."
+                    }
+                }
+            }
+        },
+        "/api/users/destroy/{id}": {
+            "delete": {
+                "operationId": "2440c968ffc558aee3d990c6410a009b",
+                "responses": {
+                    "200": {
+                        "description": "Remove the specified resource from storage."
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "responses": {
+            "200": {
+                "description": "Update the specified resource in storage."
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}
